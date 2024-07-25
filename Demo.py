@@ -1,1 +1,1 @@
-print("Testing the execution"...)
+print("Testing the execution...")

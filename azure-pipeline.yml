@@ -1,6 +1,13 @@
 trigger:
 - main
 
+schedules:
+- cron: "*/5 * * * *"   # This cron expression runs the pipeline every 5 minutes
+  displayName: "Run every 5 minutes"
+  branches:
+    include:
+    - main   # You can specify other branches if needed
+
 pool:
   vmImage: 'ubuntu-latest'
 
